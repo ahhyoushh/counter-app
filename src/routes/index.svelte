@@ -18,7 +18,7 @@
     </div>
     <Typewriter delay={1000}>
     <div class="github">
-            <a href="github.com/Ayush32173">More Like This -></a>
+            <a href="https://github.com/Ayush32173">More Like This -></a>
     </div>
     </Typewriter>
     <div class="count-button">
