@@ -10,9 +10,6 @@
 </script>
 <div class="container">
     <h1>Simple Counter app</h1>
-    <Typewriter delay={200}>
-        <p style="color: #0059ff; position: fixed; top: 70px; left: 430px">I made this app to get the svelte basics done , dont judge me.</p>
-    </Typewriter>
     <div class="count">
         <h1>{count}</h1>
     </div>
@@ -30,11 +27,19 @@
 </div>
 
 <style>
+    @media only screen and (max-width: 480px) ,only screen and (max-device-width: 480px) {
+        .count {
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+        }
+    }
     .container .github > a {
-        position: fixed;
+        position: relative;
         color: #0059ff;
-        top: 600px;
-        left: 620px;
+        top: 500px;
+        display: flex;
+        justify-content: center;
         transition: 300ms;
     }
     .container .github > a:hover {
@@ -46,12 +51,11 @@
         top: 10px;
     }
     .count {
-        position: fixed;
+        position: absolute;
         font-size: 24px;
         top: 200px;
         justify-content: center;
         text-align: center;
-        left: 660px;
         color: white;
     }
     .container .count-button .substract{
